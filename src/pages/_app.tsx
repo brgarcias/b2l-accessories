@@ -1,52 +1,43 @@
-import Head from 'next/head';
 import { NextIntlProvider } from 'next-intl';
-import { useEffect, useState } from 'react';
-import { NextUIProvider } from '@nextui-org/react';
+import type { AppProps } from 'next/app';
+import { Suspense, useEffect } from 'react';
+// bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'public/assets/app/css/fontawesome-pro.css';
+import '@/styles/index-four.scss';
+import '@/styles/main.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-import Preloader from '@/layout/Preloader';
-
-import '@/styles/globals.css';
-
-const App = ({ Component, pageProps }) => {
-  const [loader, setLoader] = useState(true);
-  const customErrorFunction = () => false;
-
+export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    setTimeout(() => {
-      setLoader(false);
-    }, 1000);
+    AOS.init();
   }, []);
 
+  const customErrorFunction = () => {
+    return false;
+  };
+
   return (
-    <NextIntlProvider
-      onError={customErrorFunction}
-      locale="pt-BR"
-      formats={{
-        dateTime: {
-          short: {
-            day: 'numeric',
-            month: 'short',
-            year: 'numeric',
+    <Suspense>
+      <NextIntlProvider
+        onError={customErrorFunction}
+        locale="pt-BR"
+        formats={{
+          dateTime: {
+            short: {
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric',
+            },
           },
-        },
-      }}
-      messages={pageProps.messages}
-      now={new Date(pageProps.now)}
-      timeZone="America/Sao_Paulo"
-    >
-      <Head>
-        <title>B2L &mdash; Brindes e Acessórios</title>
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="author" content="b2l-brindes-acessorios" />
-      </Head>
-      {loader && <Preloader />}
-      <NextUIProvider>
+        }}
+        messages={pageProps.messages}
+        now={new Date(pageProps.now)}
+        timeZone="America/Sao_Paulo"
+      >
         <Component {...pageProps} />
-      </NextUIProvider>
-    </NextIntlProvider>
+      </NextIntlProvider>
+    </Suspense>
   );
-};
-export default App;
+}

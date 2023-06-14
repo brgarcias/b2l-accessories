@@ -7,18 +7,11 @@
       "version": "latest"
     }
   },
-  "plugins": [
-    "react",
-    "prettier",
-    "react-hooks",
-    "import",
-    "@typescript-eslint"
-  ],
+  "plugins": ["react", "prettier", "import", "@typescript-eslint"],
   "extends": [
-    // "next/core-web-vitals",
+    "next/core-web-vitals",
     "eslint:recommended",
     "prettier",
-    // "prettier/react",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@next/next/recommended"
