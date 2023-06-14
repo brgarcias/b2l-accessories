@@ -11,14 +11,14 @@ const HomeTwoFeatures = () => {
       className="features__area p-relative features-bg pt-120 pb-30 cus-faq"
     >
       <div className="features__pattern">
-        <Image src={One} alt="image not found" />
+        <Image src={One} alt="image not found" unoptimized />
       </div>
       <div className="container">
         <div className="row " data-aos="fade-up" data-aos-delay="300">
           <div className="col-xl-6 col-lg-6">
             <div className="features__thumb-wrapper mb-60">
               <div className="features__thumb">
-                <Image src={Two} alt="image not found" />
+                <Image src={Two} alt="image not found" unoptimized />
               </div>
               <div className="features__cercle-1"></div>
               <div className="features__cercle-2 s-2"></div>

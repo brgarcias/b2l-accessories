@@ -20,7 +20,7 @@ export default function Banner() {
       className="hero__area hero__hight d-flex align-items-center include__bg p-relative banner-bg-two"
     >
       <div className="hero__cercle">
-        <Image src={One} alt="image not found" />
+        <Image src={One} alt="image not found" unoptimized />
       </div>
       <div className="container">
         <div className="">
@@ -62,16 +62,16 @@ export default function Banner() {
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="hero__thumb-wrapper-2 mb-60">
                 <div className="hero__thumb-2 w-img">
-                  <Image src={Two} alt="image not found" />
+                  <Image src={Two} alt="image not found" unoptimized />
                 </div>
                 <div className="hero__shape-7">
-                  <Image src={Three} alt="image not found" />
+                  <Image src={Three} alt="image not found" unoptimized />
                 </div>
                 <div className="hero__shape-8">
-                  <Image src={Four} alt="image not found" />
+                  <Image src={Four} alt="image not found" unoptimized />
                 </div>
                 <div className="hero__regtangle">
-                  <Image src={Five} alt="Image" />
+                  <Image src={Five} alt="Image" unoptimized />
                 </div>
               </div>
             </div>

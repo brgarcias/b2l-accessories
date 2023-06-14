@@ -10,16 +10,16 @@ const AboutMission = () => {
   return (
     <div id="about" className="about__area z-index-11 p-relative pt-120 pb-60">
       <div className="about__shape-1">
-        <Image src={One} alt="image not found" />
+        <Image src={One} alt="image not found" unoptimized />
       </div>
       <div className="about__shape-2">
-        <Image src={Two} alt="image not found" />
+        <Image src={Two} alt="image not found" unoptimized />
       </div>
       <div className="about__shape-3">
-        <Image src={Three} alt="image not found" />
+        <Image src={Three} alt="image not found" unoptimized />
       </div>
       <div className="about__shape-4">
-        <Image src={Four} alt="image not found" />
+        <Image src={Four} alt="image not found" unoptimized />
       </div>
       <div className="container">
         <div
@@ -30,7 +30,7 @@ const AboutMission = () => {
           <div className="col-xl-6 col-lg-6">
             <div className="about__thumb-wrapper mb-60">
               <div className="about__thumb">
-                <Image src={Five} alt="image not found" />
+                <Image src={Five} alt="image not found" unoptimized />
               </div>
             </div>
           </div>

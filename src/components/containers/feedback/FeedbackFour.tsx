@@ -55,12 +55,14 @@ const FeedbackFour = () => {
                             className="client-avatar"
                             src={One}
                             alt="Image"
+                            unoptimized
                           />
-                          <Image className="client-qt" src={Two} alt="Image" />
+                          <Image className="client-qt" src={Two} alt="Image" unoptimized />
                           <Image
                             className="client-circle"
                             src={Three}
                             alt="Image"
+                            unoptimized
                           />
                         </div>
                       </div>
@@ -88,12 +90,14 @@ const FeedbackFour = () => {
                             className="client-avatar"
                             src={One}
                             alt="Image"
+                            unoptimized
                           />
-                          <Image className="client-qt" src={Two} alt="Image" />
+                          <Image className="client-qt" src={Two} alt="Image" unoptimized />
                           <Image
                             className="client-circle"
                             src={Three}
                             alt="Image"
+                            unoptimized
                           />
                         </div>
                       </div>
@@ -121,12 +125,14 @@ const FeedbackFour = () => {
                             className="client-avatar"
                             src={One}
                             alt="Image"
+                            unoptimized
                           />
-                          <Image className="client-qt" src={Two} alt="Image" />
+                          <Image className="client-qt" src={Two} alt="Image" unoptimized />
                           <Image
                             className="client-circle"
                             src={Three}
                             alt="Image"
+                            unoptimized
                           />
                         </div>
                       </div>
@@ -159,8 +165,8 @@ const FeedbackFour = () => {
         </div>
       </div>
       <div className="about-us-thumbs">
-        <Image className="position-absolute left" src={Four} alt="Image" />
-        <Image className="position-absolute right" src={Five} alt="Image" />
+        <Image className="position-absolute left" src={Four} alt="Image" unoptimized />
+        <Image className="position-absolute right" src={Five} alt="Image" unoptimized />
       </div>
     </div>
   );

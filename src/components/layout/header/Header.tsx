@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo3 from 'public/assets/img/logo/b2l-logo-transparency.png';
+import Logo from 'public/assets/img/logo/b2l-logo-transparency.png';
 
 export default function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -68,7 +68,7 @@ export default function Header() {
               <div className="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
                   <Link href="/">
-                    <Image src={Logo3} alt="logo not found" priority />
+                    <Image src={Logo} alt="logo not found" priority unoptimized />
                   </Link>
                 </div>
                 <div className="offcanvas__close">
@@ -275,7 +275,7 @@ export default function Header() {
               <div className="col-xl-2 col-lg-2 col-6">
                 <div className="header__logo">
                   <Link href="/">
-                    <Image src={Logo3} alt="logo not found" priority />
+                    <Image src={Logo} alt="logo not found" priority unoptimized />
                   </Link>
                 </div>
               </div>
