@@ -1,0 +1,35 @@
+/** @type {import('next').NextConfig} */
+
+const appVersion = () => {
+  return Date.now();
+};
+
+const nextConfig = {
+  env: {
+    APP_ENV: 'development',
+    API: 'http://localhost:3001/v1',
+    APP_VERSION_CODE: appVersion(),
+  },
+  images: {
+    // domains: ["assets.b2l-accessories.netlify.app", "d2r9epyceweg5n.cloudfront.net"],
+    unoptimized: false,
+  },
+  serverRuntimeConfig: {},
+  publicRuntimeConfig: {
+    staticFolder: '/public',
+    assets: 'https://assets.b2l-accessories.netlify.app',
+  },
+  generateBuildId: async () => {
+    return `webid-${appVersion()}`;
+  },
+  swcMinify: true,
+  poweredByHeader: false,
+  reactStrictMode: false,
+  i18n: {
+    locales: ['pt-BR'],
+    defaultLocale: 'pt-BR',
+    localeDetection: false,
+  },
+};
+
+export default nextConfig;
