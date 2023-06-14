@@ -8,9 +8,9 @@ import HomeTwoService from '@/components/containers/service/HomeTwoService';
 import HomeTwoFeatures from '@/components/containers/features/HomeTwoFeatures';
 import HomeThreeTouch from '@/components/containers/touch/HomeThreeTouch';
 
-export default function HomeFour() {
+export default function Home() {
   return (
-    <Layout header={4} footer={2}>
+    <Layout>
       <Banner />
       <AboutMission />
       <HomeTwoService />

@@ -7,11 +7,9 @@ import ScrollProgress from './ScrollProgress';
 
 type layoutProps = {
   children: React.ReactNode;
-  header: React.ReactNode;
-  footer: React.ReactNode;
 };
 
-export default function Layout({ children, header }: layoutProps) {
+export default function Layout({ children }: layoutProps) {
   return (
     <Fragment>
       <Head>
@@ -99,7 +97,7 @@ export default function Layout({ children, header }: layoutProps) {
         <meta name="keywords" content="digitek, seo, service" />
         <meta name="description" content="SEO Service React Template" />
       </Head>
-      <div className={header === 4 ? ' fourth-page' : ' my-app'}>
+      <div className='fourth-page'>
         <Header />
         <main>{children}</main>
         <Footer />

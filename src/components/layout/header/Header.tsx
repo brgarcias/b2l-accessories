@@ -68,7 +68,12 @@ export default function Header() {
               <div className="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
                   <Link href="/">
-                    <Image src={Logo} alt="logo not found" priority unoptimized />
+                    <Image
+                      src={Logo}
+                      alt="logo not found"
+                      priority
+                      unoptimized
+                    />
                   </Link>
                 </div>
                 <div className="offcanvas__close">
@@ -275,7 +280,12 @@ export default function Header() {
               <div className="col-xl-2 col-lg-2 col-6">
                 <div className="header__logo">
                   <Link href="/">
-                    <Image src={Logo} alt="logo not found" priority unoptimized />
+                    <Image
+                      src={Logo}
+                      alt="logo not found"
+                      priority
+                      unoptimized
+                    />
                   </Link>
                 </div>
               </div>
@@ -309,7 +319,7 @@ export default function Header() {
                   <div className="header__btn d-none d-xl-block">
                     <Link
                       className="border-btn text-dark bg-warning border border-dark text-center ms-3 borderc-btn"
-                      href="/contact"
+                      href="#contact"
                     >
                       Seguir na Shopee
                     </Link>

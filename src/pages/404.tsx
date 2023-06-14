@@ -5,7 +5,7 @@ import Layout from '@/components/layout/Layout';
 
 const Error = () => {
   return (
-    <Layout header={5} footer={2}>
+    <Layout>
       <div className="pt-120 pb-120">
         <div className="container">
           <div className="row justify-content-center">
