@@ -9,7 +9,8 @@
   "NotFoundPage": {
     "Code": "Página 404",
     "Title": "Opa! Página errada",
-    "Content": "Desculpe, mas a página que você está procurando pode estar quebrada ou não ter sido criada."
+    "Content": "Desculpe, mas a página que você está procurando pode estar quebrada ou não ter sido criada.",
+    "ContentButton": "Voltar à Página Inicial"
   },
   "ErrorContent": {
     "Title": "Opa! Página não encontrada.",
