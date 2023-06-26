@@ -64,6 +64,7 @@
   & > p {
     color: var(--clr-text-1);
     margin-bottom: 45px;
+    text-transform: math-auto;
   }
 }
 .touch__input {
@@ -76,6 +77,15 @@
     padding: 0 20px;
     border-radius: 10px;
     color: #bababa;
+  }
+  textarea {
+    width: 100%;
+    background: #f9f9f9;
+    border: 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: #bababa;
+    resize: none;
   }
 }
 .touch__contact {

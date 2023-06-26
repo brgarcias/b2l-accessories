@@ -125,11 +125,14 @@ const HomeTwoFeatures = () => {
             <div className="features__content-wrapper">
               <div className="section__title-wrapper mb-25">
                 <span className="section__subtitle">
-                  <span>featured</span> campaign
+                  <span>dúvidas</span> frequentes
                 </span>
-                <h2 className="section__title">
-                  Getting started with an
-                  <span className="down__mark-line">SEO</span> campaign
+                <h2
+                  className="section__title"
+                  style={{ textTransform: 'none' }}
+                >
+                  <span className="down__mark-line">Possui alguma? </span>
+                  Pergunte-nos
                 </h2>
               </div>
               <div className="bd-faq__wrapper mb-60">
@@ -149,7 +152,8 @@ const HomeTwoFeatures = () => {
                           }
                           onClick={() => setImgTab(imgTab === 0 ? -1 : 0)}
                         >
-                          Determine Your SEO Marketing Budget
+                          Qual é o prazo de entrega dos produtos da
+                          B2LAcessórios?
                         </button>
                       </h2>
                       <div
@@ -160,10 +164,15 @@ const HomeTwoFeatures = () => {
                       >
                         <div className="accordion-body">
                           <p>
-                            From finance, retail, and travel, to social media,
-                            cybersecurity, ad tech, & more, market leaders are
-                            leveraging web data to maintain their advantage.
-                            Discover how it can work for you.
+                            O prazo de entrega dos produtos da B2LAcessórios
+                            pode variar dependendo da sua localização e do
+                            método de envio selecionado. Geralmente, os prazos
+                            estimados são exibidos durante o processo de compra,
+                            antes de finalizar o pedido. Caso tenha alguma
+                            dúvida específica sobre o prazo de entrega de um
+                            produto em particular, recomendamos entrar em
+                            contato com o atendimento ao cliente da
+                            B2LAcessórios. Em até 48h.
                           </p>
                         </div>
                       </div>
@@ -177,7 +186,7 @@ const HomeTwoFeatures = () => {
                           }
                           onClick={() => setImgTab(imgTab === 1 ? -1 : 1)}
                         >
-                          Marketing Goals and Current Site Standing
+                          A B2LAcessórios aceita devoluções ou trocas?
                         </button>
                       </h2>
                       <div
@@ -188,10 +197,14 @@ const HomeTwoFeatures = () => {
                       >
                         <div className="accordion-body">
                           <p>
-                            From finance, retail, and travel, to social media,
-                            cybersecurity, ad tech, & more, market leaders are
-                            leveraging web data to maintain their advantage.
-                            Discover how it can work for you.
+                            Sim, a B2LAcessórios aceita devoluções e trocas de
+                            produtos dentro do prazo estipulado pela política de
+                            devolução da loja. É importante verificar as
+                            condições específicas de devolução e troca na página
+                            de informações ou na política de devolução da
+                            B2LAcessórios. Caso precise realizar uma devolução
+                            ou troca, entre em contato com o atendimento ao
+                            cliente para obter as instruções adequadas.
                           </p>
                         </div>
                       </div>
@@ -205,7 +218,7 @@ const HomeTwoFeatures = () => {
                           }
                           onClick={() => setImgTab(imgTab === 2 ? -1 : 2)}
                         >
-                          Marketing Media Collection
+                          A B2LAcessórios oferece frete grátis?
                         </button>
                       </h2>
                       <div
@@ -216,10 +229,14 @@ const HomeTwoFeatures = () => {
                       >
                         <div className="accordion-body">
                           <p>
-                            From finance, retail, and travel, to social media,
-                            cybersecurity, ad tech, & more, market leaders are
-                            leveraging web data to maintain their advantage.
-                            Discover how it can work for you.
+                            A B2LAcessórios pode oferecer frete grátis em
+                            determinadas condições, como quantidade mínima de
+                            itens na compra ou promoções especiais. Recomendamos
+                            verificar se há alguma oferta de frete grátis sendo
+                            oferecida no momento da sua compra. Caso não haja, o
+                            valor do frete será calculado com base no seu
+                            endereço de entrega e no peso/volume dos produtos
+                            adquiridos.
                           </p>
                         </div>
                       </div>
@@ -233,7 +250,8 @@ const HomeTwoFeatures = () => {
                           }
                           onClick={() => setImgTab(imgTab === 3 ? -1 : 3)}
                         >
-                          Optimization Analysis, Hold On Tight
+                          A B2LAcessórios possui um serviço de atendimento ao
+                          cliente?
                         </button>
                       </h2>
                       <div
@@ -244,10 +262,14 @@ const HomeTwoFeatures = () => {
                       >
                         <div className="accordion-body">
                           <p>
-                            From finance, retail, and travel, to social media,
-                            cybersecurity, ad tech, & more, market leaders are
-                            leveraging web data to maintain their advantage.
-                            Discover how it can work for you.
+                            Sim, a B2LAcessórios possui um serviço de
+                            atendimento ao cliente dedicado a ajudar os clientes
+                            com quaisquer dúvidas, problemas ou solicitações.
+                            Você pode entrar em contato com o atendimento ao
+                            cliente da B2LAcessórios por meio do canal de
+                            comunicação disponibilizado na página da loja ou
+                            enviar seu <a href='#contact'>contato</a>. Nossa equipe estará pronta para
+                            ajudar e oferecer suporte.
                           </p>
                         </div>
                       </div>

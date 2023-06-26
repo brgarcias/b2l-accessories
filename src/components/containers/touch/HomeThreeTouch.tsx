@@ -14,93 +14,54 @@ const HomeThreeTouch = () => {
             <div className="touch__left mb-60">
               <div className="section__title-wrapper">
                 <span className="section__subtitle s-2">
-                  <span>Get </span>in touch
+                  <span>Entrar </span>em contato
                 </span>
                 <h2 className="section__title s-2 mb-30">
-                  <span className="down__mark-line">Let&apos;s</span> Talk
+                  <span className="down__mark-line">Vamos</span> Conversar
                 </h2>
               </div>
               <p>
-                We&apos;ve been growing businesses since 2009, let us do it for
-                you!
+                Nossa satisfação é ter você com a gente, por isso selecionamos as melhores ofertas!
               </p>
-              <div className="touch__search">
-                <form action="#">
-                  <input type="text" placeholder="Enter Mail" />
-                  <button type="submit">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="11.83"
-                      height="20.026"
-                      viewBox="0 0 11.83 20.026"
-                    >
-                      <path
-                        id="Path_17020"
-                        data-name="Path 17020"
-                        d="M-3925.578,5558.542l7.623,8.242-7.623,7.543"
-                        transform="translate(3927.699 -5556.422)"
-                        fill="none"
-                        stroke="#fff"
-                        strokeLinecap="round"
-                        strokeWidth="3"
-                      />
-                    </svg>
-                  </button>
-                </form>
-              </div>
             </div>
           </div>
           <div className="col-xl-8 col-lg-8">
             <div className="touch__contact p-relative">
               <div className="touch__carcle"></div>
               <div className="touch__content-title">
-                <h3>Schedule a Consultation</h3>
+                <h3>Fale Conosco</h3>
               </div>
               <form action="#">
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="touch__input">
-                      <input type="text" placeholder="First Name" />
+                      <input type="text" placeholder="Nome Completo" />
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="touch__input">
-                      <input type="text" placeholder="Last Name" />
+                      <input type="text" placeholder="Telefone" />
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="touch__input">
-                      <input type="text" placeholder="Company Name" />
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="touch__input">
-                      <input type="text" placeholder="Website" />
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="touch__input">
-                      <input type="text" placeholder="Monthly Budget" />
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="touch__input">
-                      <input type="text" placeholder="Phone Number" />
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="touch__input">
-                      <input type="text" placeholder="Email" />
+                      <input type="text" placeholder="E-mail" />
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="contact__select mb-20">
                       <select>
-                        <option value="0">Select the services</option>
-                        <option value="1">Payment</option>
-                        <option value="2">Information</option>
-                        <option value="3">Option</option>
+                        <option value="" selected disabled hidden>Selecione um Assunto</option>
+                        <option value="reembolso">Reembolso</option>
+                        <option value="prazos">Prazos</option>
+                        <option value="devolução">Devolução</option>
+                        <option value="outros">Outros</option>
                       </select>
+                    </div>
+                  </div>
+                  <div className="col-lg-12">
+                    <div className="touch__input">
+                      <textarea id="suggestions" name="suggestions" rows={5} placeholder="Sugestões e/ou Dúvidas" />
                     </div>
                   </div>
                   <div className="col-12">
@@ -112,17 +73,17 @@ const HomeThreeTouch = () => {
                           id="sing-up"
                         />
                         <label className="sign__check" htmlFor="sing-up">
-                          Accept Our{' '}
+                          Aceitar nossos{' '}
                           <span>
-                            <Link href="/">Terms</Link> &{' '}
-                            <Link href="/">Conditions</Link>
+                            <Link href="/terms">Termos</Link> &{' '}
+                            <Link href="/conditions">Condições</Link>
                           </span>
                         </label>
                       </div>
                       <div className="touch__btn">
                         <button type="button"></button>
                         <button className="border__btn" type="submit">
-                          Submit Query
+                          Enviar
                         </button>
                       </div>
                     </div>

@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import One from 'public/assets/img/index-4/client.png';
 import Two from 'public/assets/img/index-4/client-qt.png';
-import Three from 'public/assets/img/index-4/client-circle.png';
 import Four from 'public/assets/img/index-4/sheap-yellow.png';
 import Five from 'public/assets/img/index-4/star-red.png';
+import David from 'public/assets/img/feedback/david_harbor.jpg';
+import Rebeca from 'public/assets/img/feedback/rebeca_delorian.jpg';
+import Nakajima from 'public/assets/img/feedback/nakajima_osaka.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper';
 import 'swiper/css';
@@ -17,6 +18,10 @@ const FeedbackFour = () => {
           <div className="col-12">
             <div id="carouselExample" className="carousel slide">
               <div className="carousel-inner">
+                <h2 className=" mb-4 mb-md-5">
+                  Nossos clientes{' '}
+                  <span style={{ color: '#F0AD00' }}>Satisfeitos</span>
+                </h2>
                 <Swiper
                   slidesPerView={1}
                   spaceBetween={30}
@@ -37,30 +42,26 @@ const FeedbackFour = () => {
                     <div className="carousel-item active">
                       <div className="d-flex align-items-center justify-content-between gap-3">
                         <div>
-                          <h2 className="mb-4 mb-md-5">
-                            Our Clients Say <br />
-                            About Us
-                          </h2>
                           <p className="mb-4">
-                            I was very satisfied with my decision to work with
-                            Zorro on building the website for my brand, Gemini
-                            Skincare. They did a great job putting the site
-                            together in a timely fashion.
+                            Estou super satisfeito com minha experiência de
+                            compra na B2LAcessórios! Comprei uma garrafa térmica
+                            e ela chegou em perfeito estado, além de ser linda e
+                            manter minha bebida quente por horas. Recomendo essa
+                            loja para quem busca acessórios de qualidade!
                           </p>
-                          <h5>Chris Hughes</h5>
-                          <h6>CEO | Gemini Skincare</h6>
+                          <h5>David Harbor</h5>
+                          <h6>Comprador Sênior</h6>
                         </div>
                         <div className="client-img position-relative">
                           <Image
                             className="client-avatar"
-                            src={One}
+                            src={David}
                             alt="Image"
                             unoptimized
                           />
-                          <Image className="client-qt" src={Two} alt="Image" unoptimized />
                           <Image
-                            className="client-circle"
-                            src={Three}
+                            className="client-qt"
+                            src={Two}
                             alt="Image"
                             unoptimized
                           />
@@ -72,30 +73,27 @@ const FeedbackFour = () => {
                     <div className="carousel-item">
                       <div className="d-flex align-items-center justify-content-between gap-3">
                         <div>
-                          <h2 className="mb-4 mb-md-5">
-                            Our Clients Say <br />
-                            About Us
-                          </h2>
                           <p className="mb-4">
-                            I was very satisfied with my decision to work with
-                            Zorro on building the website for my brand, Gemini
-                            Skincare. They did a great job putting the site
-                            together in a timely fashion.
+                            Comprei um Spinner na B2LAcessórios e fiquei muito
+                            feliz com a minha escolha. O produto chegou antes do
+                            prazo previsto e é de excelente qualidade. O
+                            atendimento ao cliente também foi ótimo, com
+                            respostas rápidas e prestativas. Com certeza
+                            voltarei a comprar nesta loja!
                           </p>
-                          <h5>Chris Hughes</h5>
-                          <h6>CEO | Gemini Skincare</h6>
+                          <h5>Rebeca Delorian</h5>
+                          <h6>Consultora de RH</h6>
                         </div>
                         <div className="client-img position-relative">
                           <Image
                             className="client-avatar"
-                            src={One}
+                            src={Rebeca}
                             alt="Image"
                             unoptimized
                           />
-                          <Image className="client-qt" src={Two} alt="Image" unoptimized />
                           <Image
-                            className="client-circle"
-                            src={Three}
+                            className="client-qt"
+                            src={Two}
                             alt="Image"
                             unoptimized
                           />
@@ -107,30 +105,31 @@ const FeedbackFour = () => {
                     <div className="carousel-item">
                       <div className="d-flex align-items-center justify-content-between gap-3">
                         <div>
-                          <h2 className="mb-4 mb-md-5">
-                            Our Clients Say <br />
-                            About Us
-                          </h2>
                           <p className="mb-4">
-                            I was very satisfied with my decision to work with
-                            Zorro on building the website for my brand, Gemini
-                            Skincare. They did a great job putting the site
-                            together in a timely fashion.
+                            Estou extremamente satisfeito com a mochila de
+                            laptop que comprei na B2LAcessórios. Ela possui um
+                            design moderno e é muito espaçosa, permitindo que eu
+                            transporte meu laptop de forma segura e ainda tenha
+                            espaço para outros itens essenciais. Os
+                            compartimentos internos são bem organizados,
+                            facilitando a organização dos meus pertences. Além
+                            disso, a mochila é resistente e confortável de usar,
+                            com alças acolchoadas. Recomendo essa loja para quem
+                            procura uma mochila de laptop de qualidade!
                           </p>
-                          <h5>Chris Hughes</h5>
-                          <h6>CEO | Gemini Skincare</h6>
+                          <h5>Nakajima Osaka</h5>
+                          <h6>Engenheiro Civíl</h6>
                         </div>
                         <div className="client-img position-relative">
                           <Image
                             className="client-avatar"
-                            src={One}
+                            src={Nakajima}
                             alt="Image"
                             unoptimized
                           />
-                          <Image className="client-qt" src={Two} alt="Image" unoptimized />
                           <Image
-                            className="client-circle"
-                            src={Three}
+                            className="client-qt"
+                            src={Two}
                             alt="Image"
                             unoptimized
                           />
@@ -165,8 +164,18 @@ const FeedbackFour = () => {
         </div>
       </div>
       <div className="about-us-thumbs">
-        <Image className="position-absolute left" src={Four} alt="Image" unoptimized />
-        <Image className="position-absolute right" src={Five} alt="Image" unoptimized />
+        <Image
+          className="position-absolute left"
+          src={Four}
+          alt="Image"
+          unoptimized
+        />
+        <Image
+          className="position-absolute right"
+          src={Five}
+          alt="Image"
+          unoptimized
+        />
       </div>
     </div>
   );
