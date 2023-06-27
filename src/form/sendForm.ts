@@ -32,7 +32,7 @@ export const sendForm2 = async (data: FormDataProps) => {
 export const sendForm = async (data: FormDataProps) => {
   if (isEmpty(Object.values(data).join(''))) return;
 
-  return await fetch('/', {
+  return fetch('/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({ 'form-name': 'contact', ...data }).toString(),
