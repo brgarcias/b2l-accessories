@@ -3,13 +3,13 @@ import Link from 'next/link';
 import { isEmpty } from 'lodash';
 
 import InputControl from './input';
-import SelectControl from './select';
+// import SelectControl from './select';
 
 const HomeThreeTouch = () => {
   const [nameValue, setNameValue] = useState('');
   const [whatsappValue, setWhatsappValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
-  const [subjectValue, setSubjectValue] = useState('');
+  // const [subjectValue, setSubjectValue] = useState('');
   const [suggestionValue, setSuggestionValue] = useState('');
   const [errorsState, setErrorsState] = useState({
     nameValue: false,
