@@ -70,6 +70,7 @@ const HomeThreeTouch = () => {
       validateField(item[0], data.target[index].value);
     });
     if (Object.values(errorsState).every((item) => item === false)) {
+      // await sendForm(data)
       await sendForm({
         name: nameValue,
         whatsapp: whatsappValue,
@@ -138,8 +139,10 @@ const HomeThreeTouch = () => {
                 className="contact-form row"
                 data-netlify="true"
                 data-netlify-recaptcha="true"
+                netlify-honeypot="bot-field"
                 onSubmit={submitForm}
               >
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="touch__input">

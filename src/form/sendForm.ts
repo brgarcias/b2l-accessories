@@ -1,6 +1,6 @@
-import { isEmpty } from "lodash";
+import { isEmpty } from 'lodash';
 
-type FormData = {
+type FormDataProps = {
   name: string;
   whatsapp: string;
   email: string;
@@ -8,9 +8,9 @@ type FormData = {
   suggestion: string;
 };
 
-export const sendForm = async (data: FormData) => {
+export const sendForm2 = async (data: FormDataProps) => {
   if (isEmpty(Object.values(data).join(''))) return false;
-  await fetch('/.netlify/functions/emails/subscribed', {
+  await fetch('../.netlify/functions/emails/subscribed', {
     headers: {
       'netlify-emails-secret': process.env.NETLIFY_EMAILS_SECRET,
     },
@@ -26,5 +26,19 @@ export const sendForm = async (data: FormData) => {
         suggestion: data.suggestion,
       },
     }),
+  });
+};
+const encode = (bodyData) => {
+  return Object.keys(bodyData)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(bodyData[key]))
+    .join('&');
+};
+export const sendForm = async (data: FormDataProps) => {
+  if (isEmpty(Object.values(data).join(''))) return false;
+
+  await fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: encode({ 'form-name': 'contact', ...data }),
   });
 };

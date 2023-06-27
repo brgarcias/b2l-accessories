@@ -112,10 +112,7 @@ const FeedbackFour = () => {
                             transporte meu laptop de forma segura e ainda tenha
                             espaço para outros itens essenciais. Os
                             compartimentos internos são bem organizados,
-                            facilitando a organização dos meus pertences. Além
-                            disso, a mochila é resistente e confortável de usar,
-                            com alças acolchoadas. Recomendo essa loja para quem
-                            procura uma mochila de laptop de qualidade!
+                            facilitando a organização dos meus pertences.
                           </p>
                           <h5>Nakajima Osaka</h5>
                           <h6>Engenheiro Civíl</h6>
