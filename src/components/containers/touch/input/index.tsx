@@ -33,8 +33,8 @@ type InputProps = {
   error?: boolean;
   helperText?: string;
   multiline?: any;
-  minRows?: number;
-  maxRows?: number;
+  minRows?: any;
+  maxRows?: any;
   onChangeHandler: ChangeEventHandler<HTMLInputElement>;
   onFocusHandler: FocusEventHandler;
   onBlurHandler: FocusEventHandler<HTMLInputElement>;
