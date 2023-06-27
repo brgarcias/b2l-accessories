@@ -8,6 +8,8 @@ type Content = {
   open: boolean;
   title: string;
   description: string;
+  icon: string;
+  colorIcon: string;
 };
 
 type SnackbarProps = {
@@ -60,15 +62,15 @@ export default function SnackbarFeedback({ content, setOpen }: SnackbarProps) {
             ref={nodeRef}
           >
             <i
-              className="fa-light fa-check"
+              className={content.icon}
               style={{
-                color: '#66bb6a',
+                color: content.colorIcon,
                 marginTop: '5px',
               }}
             />
             <div className="snackbar-message">
               <p className="snackbar-title">{content.title}</p>
-              <p className="snackbar-description">{content.description}</p>
+              <p className="snackbar-description" style={{ fontSize: '0.8rem' }}>{content.description}</p>
             </div>
             <div
               onClick={() =>

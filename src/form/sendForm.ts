@@ -28,17 +28,13 @@ export const sendForm2 = async (data: FormDataProps) => {
     }),
   });
 };
-const encode = (bodyData) => {
-  return Object.keys(bodyData)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(bodyData[key]))
-    .join('&');
-};
-export const sendForm = async (data: FormDataProps) => {
-  if (isEmpty(Object.values(data).join(''))) return false;
 
-  await fetch('/', {
+export const sendForm = async (data: FormDataProps) => {
+  if (isEmpty(Object.values(data).join(''))) return;
+
+  return await fetch('/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: encode({ 'form-name': 'contact', ...data }),
+    body: new URLSearchParams({ 'form-name': 'contact', ...data }).toString(),
   });
 };

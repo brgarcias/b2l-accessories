@@ -19,6 +19,8 @@ const HomeThreeTouch = () => {
     open: false,
     title: '',
     description: '',
+    icon: '',
+    colorIcon: '',
   });
   const [errorsState, setErrorsState] = useState({
     nameValue: false,
@@ -70,31 +72,45 @@ const HomeThreeTouch = () => {
       validateField(item[0], data.target[index].value);
     });
     if (Object.values(errorsState).every((item) => item === false)) {
-      // await sendForm(data)
-      await sendForm({
-        name: nameValue,
-        whatsapp: whatsappValue,
-        email: emailValue,
-        subject: subjectValue,
-        suggestion: suggestionValue,
-      })
-        .then((r) => {
-          if (!r) return;
+      try {
+        const response = await sendForm({
+          name: nameValue,
+          whatsapp: whatsappValue,
+          email: emailValue,
+          subject: subjectValue,
+          suggestion: suggestionValue,
+        });
+        if (response.ok) {
+          setSubmitting(false);
           setOpenSnackbar({
             open: true,
             title: 'Formulário Enviado',
             description: 'Muito obrigado pela sua mensagem!',
+            icon: 'fa-light fa-check',
+            colorIcon: '#66bb6a',
           });
-        })
-        .catch((error) => {
-          console.log(error);
+        } else {
+          console.error('Erro ao enviar forms: ', response);
+          setSubmitting(false);
           setOpenSnackbar({
             open: true,
             title: 'Tivemos um Problema',
             description: 'Ocorreu um erro ao enviar sua mensagem!',
+            icon: 'fa-light fa-circle-exclamation',
+            colorIcon: 'rgb(230, 154, 147)',
           });
-        })
-        .finally(() => setSubmitting(false));
+        }
+      } catch (error) {
+        setSubmitting(false);
+        console.error('Erro ao enviar formulário:', error);
+        setOpenSnackbar({
+          open: true,
+          title: 'Tivemos um Problema',
+          description: 'Ocorreu um erro ao enviar sua mensagem!',
+          icon: 'fa-light fa-circle-exclamation',
+          colorIcon: 'rgb(230, 154, 147)',
+        });
+      }
     }
     Object.entries(errorsState).map((item, index) => {
       validateField(item[0], data.target[index].value);
