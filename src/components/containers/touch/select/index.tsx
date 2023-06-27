@@ -1,46 +1,43 @@
-import Select from '@mui/base/Select';
-import Option from '@mui/base/Option';
-import { FocusEventHandler } from 'react';
+import { ChangeEventHandler, FocusEventHandler, ReactNode } from 'react';
 
 type SelectProps = {
   value: any;
   name: string;
+  required: boolean;
   disabled: boolean;
   error?: boolean;
   helperText?: string;
-  onChangeHandler: (value: any) => void;
+  onChangeHandler: ChangeEventHandler<HTMLSelectElement>;
   onFocusHandler: FocusEventHandler;
-  onBlurHandler: FocusEventHandler<HTMLButtonElement>;
+  onBlurHandler: FocusEventHandler<HTMLSelectElement>;
+  children: ReactNode;
 };
 
 export default function SelectControl({
   value,
   name,
-  disabled,
-  error,
-  helperText,
+  required,
   onChangeHandler,
+  disabled,
   onFocusHandler,
   onBlurHandler,
+  error,
+  helperText,
+  children,
 }: SelectProps) {
   return (
     <div>
-      <Select
-        name={name}
+      <select
         value={value}
+        name={name}
         disabled={disabled}
-        onFocus={onFocusHandler}
+        required={required}
         onChange={onChangeHandler}
+        onFocus={onFocusHandler}
         onBlur={onBlurHandler}
       >
-        <Option value="" defaultChecked disabled hidden>
-          Selecione um Assunto
-        </Option>
-        <Option value="reembolso">Reembolso</Option>
-        <Option value="prazos">Prazos</Option>
-        <Option value="devolução">Devolução</Option>
-        <Option value="outros">Outros</Option>
-      </Select>
+        {children}
+      </select>
       <HelperText error={error} helperText={helperText} />
     </div>
   );

@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { isEmpty } from 'lodash';
+import { sendForm } from 'src/form/sendForm';
+
+import SnackbarFeedback from '../snackbar';
 
 import InputControl from './input';
-// import SelectControl from './select';
+import SelectControl from './select';
 
 const HomeThreeTouch = () => {
   const [nameValue, setNameValue] = useState('');
   const [whatsappValue, setWhatsappValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
-  // const [subjectValue, setSubjectValue] = useState('');
+  const [subjectValue, setSubjectValue] = useState('');
   const [suggestionValue, setSuggestionValue] = useState('');
+  const [isSubmitting, setSubmitting] = useState(false);
+  const [openSnackbar, setOpenSnackbar] = useState({
+    open: false,
+    title: '',
+    description: '',
+  });
   const [errorsState, setErrorsState] = useState({
     nameValue: false,
     whatsappValue: false,
@@ -54,12 +63,51 @@ const HomeThreeTouch = () => {
     return inputFormatted;
   };
 
+  const submitForm = async (data) => {
+    data.preventDefault();
+    setSubmitting(true);
+    Object.entries(errorsState).map((item, index) => {
+      validateField(item[0], data.target[index].value);
+    });
+    if (Object.values(errorsState).every((item) => item === false)) {
+      await sendForm({
+        name: nameValue,
+        whatsapp: whatsappValue,
+        email: emailValue,
+        subject: subjectValue,
+        suggestion: suggestionValue,
+      })
+        .then((r) => {
+          if (!r) return;
+          setOpenSnackbar({
+            open: true,
+            title: 'Formulário Enviado',
+            description: 'Muito obrigado pela sua mensagem!',
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+          setOpenSnackbar({
+            open: true,
+            title: 'Tivemos um Problema',
+            description: 'Ocorreu um erro ao enviar sua mensagem!',
+          });
+        })
+        .finally(() => setSubmitting(false));
+    }
+    Object.entries(errorsState).map((item, index) => {
+      validateField(item[0], data.target[index].value);
+    });
+    setSubmitting(false);
+  };
+
   return (
     <section
       id="contact"
       className="touch__arae touch-bg include__bg pt-90 pb-90"
       data-background="assets/img/shape/touch-shape.png"
     >
+      <SnackbarFeedback content={openSnackbar} setOpen={setOpenSnackbar} />
       <div className="container">
         <div className="row">
           <div className="col-xl-4 col-lg-4">
@@ -90,6 +138,7 @@ const HomeThreeTouch = () => {
                 className="contact-form row"
                 data-netlify="true"
                 data-netlify-recaptcha="true"
+                onSubmit={submitForm}
               >
                 <div className="row">
                   <div className="col-lg-6">
@@ -100,7 +149,7 @@ const HomeThreeTouch = () => {
                         name="fullName"
                         placeholder="Nome Completo"
                         required
-                        disabled={false}
+                        disabled={isSubmitting}
                         onChangeHandler={(e) => {
                           validateField('nameValue', e.target.value);
                           setNameValue(e.target.value);
@@ -124,7 +173,7 @@ const HomeThreeTouch = () => {
                         name="whatsapp"
                         placeholder="Whatsapp"
                         required
-                        disabled={false}
+                        disabled={isSubmitting}
                         onChangeHandler={(e) => {
                           validateField('whatsappValue', e.target.value);
                           setWhatsappValue(formatWhatsappBR(e.target.value));
@@ -148,7 +197,7 @@ const HomeThreeTouch = () => {
                         name="email"
                         placeholder="E-mail"
                         required
-                        disabled={false}
+                        disabled={isSubmitting}
                         onChangeHandler={(e) => {
                           validateField('emailValue', e.target.value);
                           setEmailValue(formatEmail(e.target.value));
@@ -166,19 +215,11 @@ const HomeThreeTouch = () => {
                   </div>
                   <div className="col-lg-6">
                     <div className="contact__select mb-20">
-                      <select>
-                        <option value="" selected disabled hidden>
-                          Selecione um Assunto
-                        </option>
-                        <option value="reembolso">Reembolso</option>
-                        <option value="prazos">Prazos</option>
-                        <option value="devolução">Devolução</option>
-                        <option value="outros">Outros</option>
-                      </select>
-                      {/* <SelectControl
+                      <SelectControl
                         value={subjectValue}
                         name="subject"
-                        disabled={false}
+                        disabled={isSubmitting}
+                        required
                         onChangeHandler={(e) => {
                           validateField('subjectValue', e.target.value);
                           setSubjectValue(e.target.value);
@@ -191,7 +232,15 @@ const HomeThreeTouch = () => {
                         }
                         error={errorsState.subjectValue}
                         helperText="Por favor, selecione um assunto."
-                      /> */}
+                      >
+                        <option value="" disabled hidden>
+                          Selecione um Assunto
+                        </option>
+                        <option value="reembolso">Reembolso</option>
+                        <option value="prazos">Prazos</option>
+                        <option value="devolução">Devolução</option>
+                        <option value="outros">Outros</option>
+                      </SelectControl>
                     </div>
                   </div>
                   <div className="col-lg-12">
@@ -201,19 +250,22 @@ const HomeThreeTouch = () => {
                         value={suggestionValue}
                         name="suggestions"
                         placeholder="Sugestões e/ou Dúvidas"
-                        required={false}
-                        disabled={false}
+                        required
+                        disabled={isSubmitting}
                         multiline
                         minRows={5}
                         onChangeHandler={(e) => {
+                          validateField('suggestionValue', e.target.value);
                           setSuggestionValue(e.target.value);
                         }}
                         onFocusHandler={(_e) =>
-                          validateField('suggestionValue', true)
+                          validateField('suggestionValue', suggestionValue)
                         }
-                        onBlurHandler={(_e) =>
-                          validateField('suggestionValue', true)
+                        onBlurHandler={(e) =>
+                          validateField('suggestionValue', e.target.value)
                         }
+                        error={errorsState.suggestionValue}
+                        helperText="Por favor, escreva uma sugestão e/ou dúvida."
                       />
                     </div>
                   </div>
@@ -224,6 +276,7 @@ const HomeThreeTouch = () => {
                           className="e-check-input"
                           type="checkbox"
                           id="sing-up"
+                          required
                         />
                         <label className="sign__check" htmlFor="sing-up">
                           Aceitar nossos{' '}
@@ -234,7 +287,6 @@ const HomeThreeTouch = () => {
                         </label>
                       </div>
                       <div className="touch__btn">
-                        <button type="button"></button>
                         <button className="border__btn" type="submit">
                           Enviar
                         </button>
