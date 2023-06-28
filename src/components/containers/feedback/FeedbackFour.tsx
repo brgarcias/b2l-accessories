@@ -110,9 +110,7 @@ const FeedbackFour = () => {
                             laptop que comprei na B2LAcessórios. Ela possui um
                             design moderno e é muito espaçosa, permitindo que eu
                             transporte meu laptop de forma segura e ainda tenha
-                            espaço para outros itens essenciais. Os
-                            compartimentos internos são bem organizados,
-                            facilitando a organização dos meus pertences.
+                            espaço para outros itens essenciais.
                           </p>
                           <h5>Nakajima Osaka</h5>
                           <h6>Engenheiro Civíl</h6>

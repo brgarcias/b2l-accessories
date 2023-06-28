@@ -3110,7 +3110,7 @@ input[type='color'] {
   transition: all 0.3s ease-out 0s;
 }
 .service__icon {
-  margin-bottom: 35px;
+  margin-bottom: 0px;
 }
 .service__content h3 a {
   margin-bottom: 20px;

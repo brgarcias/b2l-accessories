@@ -18,7 +18,7 @@ const HomeTwoFeatures = () => {
           <div className="col-xl-6 col-lg-6">
             <div className="features__thumb-wrapper mb-60">
               <div className="features__thumb">
-                <Image src={Two} alt="image not found" unoptimized />
+                <Image src={Two} alt="b2lbrindes" unoptimized />
               </div>
               <div className="features__cercle-1"></div>
               <div className="features__cercle-2 s-2"></div>
@@ -26,8 +26,8 @@ const HomeTwoFeatures = () => {
                 <div className="features__shape-content">
                   <div className="features__traffic">
                     <div className="content">
-                      <span>TOTAL TRAFFIC</span>
-                      <h5>123,456</h5>
+                      <span>Sempre Evoluindo!</span>
+                      <h5>B2L ACESSÓRIOS</h5>
                     </div>
                     <div className="icon">
                       <svg
@@ -64,58 +64,7 @@ const HomeTwoFeatures = () => {
                     </div>
                   </div>
                   <div className="persentence">
-                    <h6>+3.48%</h6>
-                    <span>Since last month</span>
-                  </div>
-                </div>
-              </div>
-              <div className="features__shape-2">
-                <div className="features__shape-content">
-                  <div className="features__traffic s-2">
-                    <div className="content">
-                      <span>TOTAL TRAFFIC</span>
-                      <h5>123,456</h5>
-                    </div>
-                    <div className="icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="21.397"
-                        height="12.957"
-                        viewBox="0 0 21.397 12.957"
-                      >
-                        <g
-                          id="trendincxcxg-up"
-                          transform="translate(1.414 1.414)"
-                        >
-                          <path
-                            id="Path_4cc73"
-                            data-name="Path 473"
-                            d="M19.569,6,11.55,14.018,7.33,9.8,1,16.128"
-                            transform="translate(-1 -6)"
-                            fill="none"
-                            stroke="#fff"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                          />
-                          <path
-                            id="Path_4ccx74"
-                            data-name="Path 474"
-                            d="M17,6h5.064v5.064"
-                            transform="translate(-3.496 -6)"
-                            fill="none"
-                            stroke="#fff"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                          />
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="persentence">
-                    <h6 className="s-2">+3.48%</h6>
-                    <span>Since last month</span>
+                    <h6>100% Confiável</h6>
                   </div>
                 </div>
               </div>
@@ -131,7 +80,8 @@ const HomeTwoFeatures = () => {
                   className="section__title"
                   style={{ textTransform: 'none' }}
                 >
-                  <span className="down__mark-line">Possui alguma? </span>
+                  <span className="down__mark-line">Possui alguma?</span>
+                  <br />
                   Pergunte-nos
                 </h2>
               </div>
@@ -152,8 +102,10 @@ const HomeTwoFeatures = () => {
                           }
                           onClick={() => setImgTab(imgTab === 0 ? -1 : 0)}
                         >
-                          Qual é o prazo de entrega dos produtos da
-                          B2LAcessórios?
+                          <span style={{ width: '85%' }}>
+                            Qual é o prazo de entrega dos produtos da
+                            B2LAcessórios?
+                          </span>
                         </button>
                       </h2>
                       <div
@@ -186,7 +138,9 @@ const HomeTwoFeatures = () => {
                           }
                           onClick={() => setImgTab(imgTab === 1 ? -1 : 1)}
                         >
-                          A B2LAcessórios aceita devoluções ou trocas?
+                          <span style={{ width: '85%' }}>
+                            A B2LAcessórios aceita devoluções ou trocas?
+                          </span>
                         </button>
                       </h2>
                       <div
@@ -218,7 +172,7 @@ const HomeTwoFeatures = () => {
                           }
                           onClick={() => setImgTab(imgTab === 2 ? -1 : 2)}
                         >
-                          A B2LAcessórios oferece frete grátis?
+                          <span style={{ width: '85%' }}>A B2LAcessórios oferece frete grátis?</span>
                         </button>
                       </h2>
                       <div
@@ -250,8 +204,10 @@ const HomeTwoFeatures = () => {
                           }
                           onClick={() => setImgTab(imgTab === 3 ? -1 : 3)}
                         >
-                          A B2LAcessórios possui um serviço de atendimento ao
-                          cliente?
+                          <span style={{ width: '85%' }}>
+                            A B2LAcessórios possui um serviço de atendimento ao
+                            cliente?
+                          </span>
                         </button>
                       </h2>
                       <div
@@ -268,8 +224,8 @@ const HomeTwoFeatures = () => {
                             Você pode entrar em contato com o atendimento ao
                             cliente da B2LAcessórios por meio do canal de
                             comunicação disponibilizado na página da loja ou
-                            enviar seu <a href='#contact'>contato</a>. Nossa equipe estará pronta para
-                            ajudar e oferecer suporte.
+                            enviar seu <a href="#contact">contato</a>. Nossa
+                            equipe estará pronta para ajudar e oferecer suporte.
                           </p>
                         </div>
                       </div>
