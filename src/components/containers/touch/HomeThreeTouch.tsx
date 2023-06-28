@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { isEmpty } from 'lodash';
-// import { sendForm } from 'src/form/sendForm';
 
 import SnackbarFeedback from '../snackbar';
 
@@ -72,52 +71,12 @@ const HomeThreeTouch = () => {
       validateField(item[0], data.target[index].value);
     });
     if (Object.values(errorsState).every((item) => item === false)) {
-      // try {
-      //   const response = await sendForm({
-      //     name: nameValue,
-      //     whatsapp: whatsappValue,
-      //     email: emailValue,
-      //     subject: subjectValue,
-      //     suggestion: suggestionValue,
-      //   });
-      //   if (response.ok) {
-      //     setSubmitting(false);
-      //     setOpenSnackbar({
-      //       open: true,
-      //       title: 'Formulário Enviado',
-      //       description: 'Muito obrigado pela sua mensagem!',
-      //       icon: 'fa-light fa-check',
-      //       colorIcon: '#66bb6a',
-      //     });
-      //   } else {
-      //     console.error('Erro ao enviar forms: ', response);
-      //     setSubmitting(false);
-      //     setOpenSnackbar({
-      //       open: true,
-      //       title: 'Tivemos um Problema',
-      //       description: 'Ocorreu um erro ao enviar sua mensagem!',
-      //       icon: 'fa-light fa-circle-exclamation',
-      //       colorIcon: 'rgb(230, 154, 147)',
-      //     });
-      //   }
-      // } catch (error) {
-      //   setSubmitting(false);
-      //   console.error('Erro ao enviar formulário:', error);
-      //   setOpenSnackbar({
-      //     open: true,
-      //     title: 'Tivemos um Problema',
-      //     description: 'Ocorreu um erro ao enviar sua mensagem!',
-      //     icon: 'fa-light fa-circle-exclamation',
-      //     colorIcon: 'rgb(230, 154, 147)',
-      //   });
-      // }
-
       const dataToSend = {
-        name: nameValue,
+        fullName: nameValue,
         whatsapp: whatsappValue,
         email: emailValue,
         subject: subjectValue,
-        suggestion: suggestionValue,
+        suggestions: suggestionValue,
       };
       fetch('/', {
         method: 'POST',
