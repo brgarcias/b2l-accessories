@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { isEmpty } from 'lodash';
 
 import SnackbarFeedback from '../snackbar';
+import LinearProgress from '../linearprogress';
 
 import InputControl from './input';
 import SelectControl from './select';
@@ -88,7 +89,6 @@ const HomeThreeTouch = () => {
       })
         .then((response) => {
           if (response.ok) {
-            setSubmitting(false);
             setOpenSnackbar({
               open: true,
               title: 'Formulário Enviado',
@@ -98,7 +98,6 @@ const HomeThreeTouch = () => {
             });
           } else {
             console.error('Erro ao enviar forms: ', response);
-            setSubmitting(false);
             setOpenSnackbar({
               open: true,
               title: 'Tivemos um Problema',
@@ -109,7 +108,6 @@ const HomeThreeTouch = () => {
           }
         })
         .catch((error) => {
-          setSubmitting(false);
           console.error('Erro ao enviar formulário:', error);
           setOpenSnackbar({
             open: true,
@@ -118,7 +116,8 @@ const HomeThreeTouch = () => {
             icon: 'fa-light fa-circle-exclamation',
             colorIcon: 'rgb(230, 154, 147)',
           });
-        });
+        })
+        .finally(() => setSubmitting(false));
     }
     Object.entries(errorsState).map((item, index) => {
       validateField(item[0], data.target[index].value);
@@ -157,6 +156,7 @@ const HomeThreeTouch = () => {
               <div className="touch__content-title">
                 <h3>Fale Conosco</h3>
               </div>
+              <LinearProgress show={isSubmitting} />
               <form
                 name="contact"
                 className="contact-form row"

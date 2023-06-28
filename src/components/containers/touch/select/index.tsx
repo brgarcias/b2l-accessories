@@ -55,17 +55,16 @@ type HelperTextProps = {
 
 const HelperText = ({ error, helperText }: HelperTextProps) => {
   return error ? (
-    <p
+    <span
       style={{
         color: '#e69a93',
         fontSize: '0.8rem',
         paddingLeft: '10px',
-        transition: 'opacity 1s ease-in',
-        opacity: 1,
+        transition: '.3s',
         textTransform: 'none',
       }}
     >
       {helperText}
-    </p>
+    </span>
   ) : null;
 };
