@@ -27,7 +27,7 @@
         }
         &__content {
           h3 {
-            a, span {
+            a, span, i {
               color: var(--clr-common-white);
               &:hover {
                 cursor: default;
@@ -48,6 +48,9 @@
             * {
               fill: var(--clr-common-white);
             }
+          }
+          i {
+            color: white;
           }
         }
       }
@@ -71,6 +74,11 @@
   }
   &__icon {
     margin-bottom: 0px;
+    i {
+      color: #F0AD00;
+      font-size: 3.5rem;
+      margin-Bottom: 15px;
+    }
   }
   &__content {
     h3 {

@@ -23,7 +23,7 @@ const HomeTwoService = () => {
                 <div className="service__thumb include__bg service-two-cmn-spinner"></div>
                 <div className="service__icon transition-3">
                   <svg
-                    fill="#000000"
+                    fill="#F0AD00"
                     width="70px"
                     height="70px"
                     viewBox="0 -1 26 26"
@@ -63,7 +63,7 @@ const HomeTwoService = () => {
                 <div className="service__thumb include__bg service-two-cmn-warm-bottle"></div>
                 <div className="service__icon transition-3">
                   <svg
-                    fill="#000000"
+                    fill="#F0AD00"
                     height="70px"
                     width="70px"
                     version="1.1"
@@ -162,7 +162,7 @@ const HomeTwoService = () => {
                 <div className="service__thumb include__bg service-two-cmn-notebook-pack"></div>
                 <div className="service__icon transition-3">
                   <svg
-                    fill="#000000"
+                    fill="#F0AD00"
                     width="70px"
                     height="70px"
                     viewBox="0 0 128 128"
@@ -196,7 +196,7 @@ const HomeTwoService = () => {
                 <div className="service__thumb include__bg service-two-cmn-tool-kit"></div>
                 <div className="service__icon transition-3">
                   <svg
-                    fill="#000000"
+                    fill="#F0AD00"
                     version="1.1"
                     id="Capa_1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@ const HomeTwoService = () => {
                 <div className="service__thumb include__bg service-two-cmn-key-ring"></div>
                 <div className="service__icon transition-3">
                   <svg
-                    fill="#000000"
+                    fill="#F0AD00"
                     version="1.1"
                     id="Capa_1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -698,30 +698,7 @@ const HomeTwoService = () => {
               <div className="service__item mb-30 min-height">
                 <div className="service__thumb include__bg service-two-cmn-sound-box"></div>
                 <div className="service__icon transition-3">
-                  <svg
-                    fill="none"
-                    stroke="#000000"
-                    width="70px"
-                    height="70px"
-                    viewBox="0 0 48 48"
-                    id="b"
-                    xmlns="http://www.w3.org/2000/svg"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path
-                      className="c"
-                      d="m32.017,16.7078c1.7678,1.3258,3.241,4.7141,2.9463,8.397-.2946,2.799-1.7678,5.1561-2.9463,6.04"
-                    />
-                    <path
-                      className="c"
-                      d="m5.5,17.7391v12.8165h8.5443l11.0487,8.839V8.6054l-11.0487,9.1336H5.5Z"
-                    />
-                    <path
-                      className="c"
-                      d="m37.173,10.9625c3.0936,2.3571,5.598,8.397,5.3034,15.0263-.4419,5.0088-2.9463,9.1336-5.3034,10.9014"
-                    />
-                  </svg>
+				  <i className="fa-thin fa-speakers" />
                 </div>
                 <div className="service__content">
                   <h3>
