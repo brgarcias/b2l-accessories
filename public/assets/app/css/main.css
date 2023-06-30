@@ -3077,10 +3077,10 @@ input[type='color'] {
 .service__item:hover .service__thumb {
   opacity: 15%;
 }
-.service__item:hover .service__content h3 a {
+.service__item:hover .service__content h3 span {
   color: var(--clr-common-white);
 }
-.service__item:hover .service__content h3 a:hover {
+.service__item:hover .service__content h3 span:hover {
   color: var(--clr-theme-1);
 }
 .service__item:hover .service__content p {
@@ -3112,14 +3112,14 @@ input[type='color'] {
 .service__icon {
   margin-bottom: 0px;
 }
-.service__content h3 a {
+.service__content h3 span {
   margin-bottom: 20px;
   display: inline-block;
   font-size: 22px;
 }
 @media (max-width: 450px),
   only screen and (min-width: 768px) and (max-width: 991px) {
-  .service__content h3 a {
+  .service__content h3 span {
     font-size: 20px;
   }
 }

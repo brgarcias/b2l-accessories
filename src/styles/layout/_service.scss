@@ -27,9 +27,10 @@
         }
         &__content {
           h3 {
-            a {
+            a, span {
               color: var(--clr-common-white);
               &:hover {
+                cursor: default;
                 color: var(--clr-theme-1);
               }
             }
@@ -73,7 +74,8 @@
   }
   &__content {
     h3 {
-      a {
+      a, span {
+        margin-top: 25px;
         margin-bottom: 20px;
         display: inline-block;
         font-size: 22px;
@@ -85,6 +87,7 @@
     p {
       color: #4b4b4b;
       margin-bottom: 0;
+      text-transform: initial;
     }
   }
   &__thumb {

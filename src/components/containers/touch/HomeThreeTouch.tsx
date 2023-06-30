@@ -279,7 +279,7 @@ const HomeThreeTouch = () => {
                         required
                         disabled={isSubmitting}
                         multiline
-                        minRows={5}
+                        rows={5}
                         onChangeHandler={(e) => {
                           validateField('suggestionValue', e.target.value);
                           setSuggestionValue(e.target.value);

@@ -33,8 +33,7 @@ type InputProps = {
   error?: boolean;
   helperText?: string;
   multiline?: any;
-  minRows?: any;
-  maxRows?: any;
+  rows?: any;
   onChangeHandler: ChangeEventHandler<HTMLInputElement>;
   onFocusHandler: FocusEventHandler;
   onBlurHandler: FocusEventHandler<HTMLInputElement>;
@@ -53,8 +52,7 @@ export default function InputControl({
   error,
   helperText,
   multiline,
-  minRows,
-  maxRows,
+  rows,
 }: InputProps) {
   return (
     <div>
@@ -69,9 +67,7 @@ export default function InputControl({
         onFocus={onFocusHandler}
         onBlur={onBlurHandler}
         multiline={multiline}
-        minRows={minRows}
-        maxRows={maxRows}
-        rows={minRows}
+        rows={rows}
       />
       <HelperText error={error} helperText={helperText} />
     </div>
@@ -82,8 +78,6 @@ InputControl.defaultProps = {
   error: false,
   helperText: null,
   multiline: false,
-  minRows: 1,
-  maxRows: 1,
 };
 
 type HelperTextProps = {
