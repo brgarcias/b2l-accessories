@@ -51,12 +51,12 @@
   }
 }
 .hero__hight {
-  min-height: 1080px;
+  padding-top: 160px;
   @media #{$lg} {
-    min-height: 850px;
+    padding-top: 160px;
   }
   @media #{$md} {
-    min-height: 850px;
+    padding-top: 160px;
   }
   &-3 {
     min-height: 1100px;

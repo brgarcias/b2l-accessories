@@ -9808,6 +9808,9 @@
     font-size: 84px;
     line-height: 94px;
     font-weight: 700;
+    @media (max-width: 768px) {
+      font-size: 43px;
+    }
   }
   h2,
   .h2 {
