@@ -33,14 +33,10 @@ export default function Banner() {
                     <span> {homePageTranslations('Banner.TitleAccent')}</span>
                   </span>
                   <h1 className="" data-aos="fade-right" data-aos-delay="300">
-                    digital product
-                    <br />
-                    design agency
+                    B2LAcessórios
                   </h1>
                   <p className="" data-aos="fade-up" data-aos-delay="600">
-                    Gain and maintain your place at the top of SERPs with our
-                    expertise on all leading SEO platforms and licensing to
-                    top-tier tools.
+                    Acessórios de Qualidade e Variedade em um só Lugar
                   </p>
                 </div>
                 <div

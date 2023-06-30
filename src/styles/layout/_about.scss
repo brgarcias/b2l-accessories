@@ -87,11 +87,13 @@
 .about__features-content {
   p {
     margin-bottom: 0px;
+    text-transform: none;
   }
 }
 .about__content-wapper {
   & > p {
     margin-bottom: 35px;
+    text-transform: none;
   }
 }
 .about__thumb-wrapper-3 {

@@ -38,17 +38,19 @@ const AboutMission = () => {
             <div className="about__content-wapper mb-60">
               <div className="section__title-wrapper mb-40">
                 <span className="section__subtitle-2">
-                  <span>What</span> we do
+                  Sobre<span> Nós</span>
                 </span>
                 <h2 className="section__title-2">
-                  Our Mission is to change Your View for SEO
+                  Nossa missão é agilizar sua vida
                 </h2>
               </div>
               <p>
-                Smratseo is a brand of digital agency. Competen novate
-                synergstic vortas through forward strategic theme areas
-                Compelling extend super was that Proactive myocardinate vertical
-                strategic
+                A B2LAcessórios é uma empresa especializada na venda de
+                acessórios diversos, oferecendo uma ampla variedade de produtos
+                de qualidade. Seu catálogo inclui Garrafas Térmicas, Fidget Spinners,
+                Mochilas para Laptop e muito mais. Com um atendimento ao cliente
+                eficiente, a B2LAcessórios se destaca por oferecer produtos
+                duráveis, funcionais e com preços acessíveis.
               </p>
               <div className="about__features-box">
                 <div className="about__features-item">
@@ -57,10 +59,9 @@ const AboutMission = () => {
                   </div>
                   <div className="about__features-content">
                     <p>
-                      If Google can&apos;t crawl your site, it&apos;s not going
-                      to rank
+                      Priorizamos a sua Satisfação
                     </p>
-                    <p>- but that doesn&apos;t mean avoiding Javascript.</p>
+                    <p>- Com garantia e facilidade nos processos de devolução.</p>
                   </div>
                 </div>
                 <div className="about__features-item">
@@ -69,10 +70,9 @@ const AboutMission = () => {
                   </div>
                   <div className="about__features-content">
                     <p>
-                      If Google can&apos;t crawl your site, it&apos;s not going
-                      to rank
+                      Acessórios Práticos e Modernos
                     </p>
-                    <p>- but that doesn&apos;t mean avoiding Javascript.</p>
+                    <p>- Muita variedade e qualidade no catálogo.</p>
                   </div>
                 </div>
                 <div className="about__features-item">
@@ -81,10 +81,9 @@ const AboutMission = () => {
                   </div>
                   <div className="about__features-content">
                     <p>
-                      If Google can&apos;t crawl your site, it&apos;s not going
-                      to rank
+                      Rápida Entrega
                     </p>
-                    <p>- but that doesn&apos;t mean avoiding Javascript.</p>
+                    <p>- Recebemos o pedido e entregamos num piscar de olhos.</p>
                   </div>
                 </div>
               </div>
