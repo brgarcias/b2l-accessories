@@ -50,19 +50,19 @@ export default function Header() {
                 <div className="mean-bar d-block d-lg-none">
                   <nav className="mean-nav">
                     <ul>
-                      <li>
+                      <li onClick={handleToggleMenu}>
                         <Link href="#about">Sobre Nós</Link>
                       </li>
-                      <li>
+                      <li onClick={handleToggleMenu}>
                         <Link href="#products">Produtos</Link>
                       </li>
-                      <li>
+                      <li onClick={handleToggleMenu}>
                         <Link href="#questions">Dúvidas</Link>
                       </li>
-                      <li>
+                      <li onClick={handleToggleMenu}>
                         <Link href="#clients">Clientes</Link>
                       </li>
-                      <li className="mean-last">
+                      <li className="mean-last" onClick={handleToggleMenu}>
                         <Link href="#contact">Contato</Link>
                       </li>
                     </ul>
@@ -87,7 +87,10 @@ export default function Header() {
                       <i className="fal fa-envelope"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <Link href="mailto:alex39396@gmail.com" aria-label="Contact Us">
+                      <Link
+                        href="mailto:alex39396@gmail.com"
+                        aria-label="Contact Us"
+                      >
                         <span className="mailto:alex39396@gmail.com">
                           alex39396@gmail.com
                         </span>

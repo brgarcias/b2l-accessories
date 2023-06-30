@@ -35,8 +35,8 @@ export default function Banner() {
                   <h1 className="" data-aos="fade-right" data-aos-delay="300">
                     B2LAcessórios
                   </h1>
-                  <p className="" data-aos="fade-up" data-aos-delay="600">
-                    Acessórios de Qualidade e Variedade em um só Lugar
+                  <p className="" data-aos="fade-up" data-aos-delay="600" style={{ textTransform: 'initial' }}>
+                    Acessórios de Qualidade e Variedade em um só lugar
                   </p>
                 </div>
                 {/* <div
