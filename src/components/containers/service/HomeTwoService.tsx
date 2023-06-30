@@ -11,8 +11,8 @@ const HomeTwoService = () => {
               <span className="section__subtitle">
                 O que<span> visamos</span>
               </span>
-              <h2 className="section__title">
-                Nossos Produtos
+              <h2 className="section__title" style={{ textTransform: 'initial' }}>
+                Alguns dos Nossos Produtos
                 <span className="down__mark-middle"></span>
               </h2>
             </div>
@@ -43,12 +43,12 @@ const HomeTwoService = () => {
                 </div>
                 <div className="service__content">
                   <h3>
-                    <span>Fidget Spinners</span>
+                    <span>Fidget Hand Spinners</span>
                   </h3>
                   <p style={{ textTransform: 'initial' }}>
                     Em substituição a roer as unhas, balançar as pernas e morder
                     pequenos objetos, por exemplo, pode-se utilizar o Fidget
-                    Spinner para manter-se concentrado.
+                    Hand Spinner para manter-se concentrado.
                   </p>
                 </div>
                 {/* <div className="service__link">
@@ -698,7 +698,7 @@ const HomeTwoService = () => {
               <div className="service__item mb-30 min-height">
                 <div className="service__thumb include__bg service-two-cmn-sound-box"></div>
                 <div className="service__icon transition-3">
-				  <i className="fa-thin fa-speakers" />
+                  <i className="fa-thin fa-speakers" />
                 </div>
                 <div className="service__content">
                   <h3>

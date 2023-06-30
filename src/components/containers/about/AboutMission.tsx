@@ -21,16 +21,16 @@ const AboutMission = () => {
                 <span className="section__subtitle-2">
                   Sobre<span> Nós</span>
                 </span>
-                <h2 className="section__title-2">
-                  Nossa missão é agilizar sua vida
+                <h2 className="section__title-2" style={{ textTransform: 'initial' }}>
+                  Nossa Missão é sua Satisfação
                 </h2>
               </div>
               <p>
-                A B2LAcessórios é uma empresa especializada na venda de
+                A B2L Acessórios é uma empresa especializada na venda de
                 acessórios diversos, oferecendo uma ampla variedade de produtos
-                de qualidade. Seu catálogo inclui Garrafas Térmicas, Fidget
+                de qualidade. Seu catálogo inclui Garrafas Térmicas, Fidget Hand
                 Spinners, Mochilas para Laptop e muito mais. Com um atendimento
-                ao cliente eficiente, a B2LAcessórios se destaca por oferecer
+                ao cliente eficiente, a B2L Acessórios se destaca por oferecer
                 produtos duráveis, funcionais e com preços acessíveis.
               </p>
               <div className="about__features-box">

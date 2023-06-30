@@ -1,18 +1,14 @@
 import { GetStaticProps } from 'next';
-import React, { useState } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import One from 'public/assets/img/shape/cercle.png';
-import Two from 'public/assets/img/hero/hero-thumb-2.png';
+import Two from 'public/assets/img/hero/banner.png';
 import Three from 'public/assets/img/shape/hero-shape-5.png';
 import Four from 'public/assets/img/shape/hero-shape-6.png';
 import Five from 'public/assets/img/shape/rectangle-3.png';
 
-import YoutubeEmbed from '@/components/containers/youtube/YoutubeEmbed';
-
 export default function Banner() {
   const homePageTranslations = useTranslations('HomePage');
-  const [videoActive, setVideoActive] = useState(false);
 
   return (
     <section
@@ -28,14 +24,24 @@ export default function Banner() {
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="hero__content-wrapper">
                 <div className="hero__content mb-60">
-                  <span className="" data-aos="fade-up" data-aos-delay="200">
+                  <span
+                    className=""
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    style={{ textTransform: 'initial' }}
+                  >
                     {homePageTranslations('Banner.Title')}{' '}
                     <span> {homePageTranslations('Banner.TitleAccent')}</span>
                   </span>
                   <h1 className="" data-aos="fade-right" data-aos-delay="300">
-                    B2LAcessórios
+                    B2L Acessórios
                   </h1>
-                  <p className="" data-aos="fade-up" data-aos-delay="600" style={{ textTransform: 'initial' }}>
+                  <p
+                    className=""
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                    style={{ textTransform: 'initial' }}
+                  >
                     Acessórios de Qualidade e Variedade em um só lugar
                   </p>
                 </div>
@@ -58,7 +64,12 @@ export default function Banner() {
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="hero__thumb-wrapper-2 mb-60">
                 <div className="hero__thumb-2 w-img">
-                  <Image src={Two} alt="image not found" unoptimized />
+                  <Image
+                    src={Two}
+                    alt="image not found"
+                    unoptimized
+                    style={{ maxWidth: '500px' }}
+                  />
                 </div>
                 <div className="hero__shape-7">
                   <Image src={Three} alt="image not found" unoptimized />
@@ -71,26 +82,6 @@ export default function Banner() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className={(videoActive ? ' video-zoom-in' : ' ') + ' video-backdrop'}
-        onClick={() => setVideoActive(false)}
-      >
-        <div className="video-inner">
-          <div
-            className="video-container"
-            onClick={(e: any) => e.stopPropagation()}
-          >
-            {videoActive && <YoutubeEmbed embedId="fSv6UgCkuTU" />}
-            <button
-              aria-label="close video popup"
-              className="close-video-popup"
-              onClick={() => setVideoActive(false)}
-            >
-              <i className="fa-light fa-xmark"></i>
-            </button>
           </div>
         </div>
       </div>

@@ -44,7 +44,7 @@ const FeedbackFour = () => {
                         <div>
                           <p className="mb-4">
                             Estou super satisfeito com minha experiência de
-                            compra na B2LAcessórios! Comprei uma garrafa térmica
+                            compra na B2L Acessórios! Comprei uma garrafa térmica
                             e ela chegou em perfeito estado, além de ser linda e
                             manter minha bebida quente por horas. Recomendo essa
                             loja para quem busca acessórios de qualidade!
@@ -74,7 +74,7 @@ const FeedbackFour = () => {
                       <div className="d-flex align-items-center justify-content-between gap-3">
                         <div>
                           <p className="mb-4">
-                            Comprei um Spinner na B2LAcessórios e fiquei muito
+                            Comprei um Spinner na B2L Acessórios e fiquei muito
                             feliz com a minha escolha. O produto chegou antes do
                             prazo previsto e é de excelente qualidade. O
                             atendimento ao cliente também foi ótimo, com
@@ -107,7 +107,7 @@ const FeedbackFour = () => {
                         <div>
                           <p className="mb-4">
                             Estou extremamente satisfeito com a mochila de
-                            laptop que comprei na B2LAcessórios. Ela possui um
+                            laptop que comprei na B2L Acessórios. Ela possui um
                             design moderno e é muito espaçosa, permitindo que eu
                             transporte meu laptop de forma segura e ainda tenha
                             espaço para outros itens essenciais.
