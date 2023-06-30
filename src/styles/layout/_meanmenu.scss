@@ -39,7 +39,7 @@
     border-bottom: 0;
   }
   &:hover {
-    color: var(--clr-theme-1);
+    color: var(--clr-theme-3);
   }
 }
 .mean-container .mean-nav ul li a.mean-expand {
@@ -57,7 +57,7 @@
   font-weight: 400;
   @include border-radius(50%);
   &:hover {
-    background: var(--clr-theme-1);
+    background: var(--clr-theme-3);
     color: var(--clr-common-white);
   }
 }

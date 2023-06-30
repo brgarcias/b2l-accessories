@@ -25,8 +25,7 @@
     }
   }
   &__info {
-    background: var(--clr-common-white) none repeat scroll 0 0;
-    border-left: 3px solid var(--clr-theme-1);
+    background: rgb(236 239 185 / 91%);
     position: fixed;
     right: 0;
     top: 0;
@@ -44,7 +43,6 @@
     overflow-y: scroll;
     overscroll-behavior-y: contain;
     scrollbar-width: none;
-    background-color: var(--clr-common-white);
     @media #{$xs} {
       width: 300px;
     }
@@ -200,7 +198,7 @@
           align-items: center;
           justify-content: center;
           border: 1px solid var(--clr-border-1);
-          color: var(--clr-theme-1);
+          color: var(--clr-theme-3);
           @include border-radius(50%);
           overflow: hidden;
           position: relative;
