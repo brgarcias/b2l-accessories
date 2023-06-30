@@ -159,7 +159,7 @@ const HomeThreeTouch = () => {
               <LinearProgress show={isSubmitting} />
               <form
                 name="contact"
-                className="contact-form row"
+                className="contact-form"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
                 method="post"

@@ -39,7 +39,7 @@ export default function Banner() {
                     Acessórios de Qualidade e Variedade em um só Lugar
                   </p>
                 </div>
-                <div
+                {/* <div
                   className="hero__btn-link "
                   data-aos="fade-up"
                   data-aos-delay="800"
@@ -52,7 +52,7 @@ export default function Banner() {
                     {' '}
                     <i className="fa-solid fa-play"></i>
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6">
