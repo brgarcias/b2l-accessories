@@ -21,7 +21,10 @@ const AboutMission = () => {
                 <span className="section__subtitle-2">
                   Sobre<span> Nós</span>
                 </span>
-                <h2 className="section__title-2" style={{ textTransform: 'initial' }}>
+                <h2
+                  className="section__title-2"
+                  style={{ textTransform: 'initial' }}
+                >
                   Nossa Missão é sua Satisfação
                 </h2>
               </div>
@@ -30,8 +33,9 @@ const AboutMission = () => {
                 acessórios diversos, oferecendo uma ampla variedade de produtos
                 de qualidade. Seu catálogo inclui Garrafas Térmicas, Fidget Hand
                 Spinners, Mochilas para Laptop e muito mais. Com um atendimento
-                ao cliente eficiente, a B2L Acessórios se destaca por oferecer
-                produtos duráveis, funcionais e com preços acessíveis.
+                eficiente ao cliente, a B2L Acessórios se destaca por oferecer
+                produtos de altíssima qualidade, modernos e com preços
+                acessíveis.
               </p>
               <div className="about__features-box">
                 <div className="about__features-item">
