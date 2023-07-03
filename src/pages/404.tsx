@@ -9,7 +9,10 @@ export default function Error() {
   const errorPageTranslations = useTranslations('NotFoundPage');
   return (
     <Layout>
-      <div className="pt-120 pb-120 d-flex justify-content-center align-items-center" style={{ height: '94vh' }}>
+      <div
+        className="pt-120 pb-120 d-flex justify-content-center align-items-center"
+        style={{ height: '94vh' }}
+      >
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12 col-lg-6 text-center">

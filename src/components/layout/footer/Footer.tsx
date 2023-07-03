@@ -13,13 +13,13 @@ export default function Footer() {
                   href="https://www.facebook.com/profile.php?id=100004238262682&mibextid=ZbWKwL"
                   target="_blank"
                 >
-                  <i className="fa-brands fa-facebook-f"/>
+                  <i className="fa-brands fa-facebook-f" />
                 </Link>
                 <Link
                   href="https://instagram.com/b2lacessorios?igshid=MzNlNGNkZWQ4Mg=="
                   target="_blank"
                 >
-                  <i className="fa-brands fa-instagram"/>
+                  <i className="fa-brands fa-instagram" />
                 </Link>
                 {/* <Link href="https://shp.ee/3p3hha5" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 48 48" opacity={0.5}>

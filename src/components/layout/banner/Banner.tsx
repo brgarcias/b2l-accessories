@@ -19,13 +19,12 @@ export default function Banner() {
         <Image src={One} alt="image not found" unoptimized />
       </div>
       <div className="container">
-        <div className="">
+        <div>
           <div className="row align-items-center">
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="hero__content-wrapper">
                 <div className="hero__content mb-60">
                   <span
-                    className=""
                     data-aos="fade-up"
                     data-aos-delay="200"
                     style={{ textTransform: 'initial' }}
@@ -33,11 +32,10 @@ export default function Banner() {
                     {homePageTranslations('Banner.Title')}{' '}
                     <span> {homePageTranslations('Banner.TitleAccent')}</span>
                   </span>
-                  <h1 className="" data-aos="fade-right" data-aos-delay="300">
+                  <h1 data-aos="fade-right" data-aos-delay="300">
                     B2L Acessórios
                   </h1>
                   <p
-                    className=""
                     data-aos="fade-up"
                     data-aos-delay="600"
                     style={{ textTransform: 'initial' }}
@@ -68,7 +66,7 @@ export default function Banner() {
                     src={Two}
                     alt="image not found"
                     unoptimized
-                    style={{ maxWidth: '500px' }}
+                    style={{ maxWidth: '400px' }}
                   />
                 </div>
                 <div className="hero__shape-7">

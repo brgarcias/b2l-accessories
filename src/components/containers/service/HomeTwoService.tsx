@@ -11,7 +11,10 @@ const HomeTwoService = () => {
               <span className="section__subtitle">
                 O que<span> visamos</span>
               </span>
-              <h2 className="section__title" style={{ textTransform: 'initial' }}>
+              <h2
+                className="section__title"
+                style={{ textTransform: 'initial' }}
+              >
                 Alguns dos Nossos Produtos
                 <span className="down__mark-middle"></span>
               </h2>

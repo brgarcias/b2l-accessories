@@ -44,10 +44,11 @@ const FeedbackFour = () => {
                         <div>
                           <p className="mb-4">
                             Estou super satisfeito com minha experiência de
-                            compra na B2L Acessórios! Comprei uma garrafa térmica
-                            e ela chegou em perfeito estado, além de ser linda e
-                            manter minha bebida quente por horas. Recomendo essa
-                            loja para quem busca acessórios de qualidade!
+                            compra na B2L Acessórios! Comprei uma garrafa
+                            térmica e ela chegou em perfeito estado, além de ser
+                            linda e manter minha bebida quente por horas.
+                            Recomendo essa loja para quem busca acessórios de
+                            qualidade!
                           </p>
                           <h5>David Harbor</h5>
                           <h6>Comprador Sênior</h6>
@@ -140,7 +141,7 @@ const FeedbackFour = () => {
                 data-bs-target="#carouselExample"
                 data-bs-slide="prev"
               >
-                <span className="">
+                <span>
                   <i className="fas fa-long-arrow-alt-left"></i>
                 </span>
               </button>
@@ -150,7 +151,7 @@ const FeedbackFour = () => {
                 data-bs-target="#carouselExample"
                 data-bs-slide="next"
               >
-                <span className="">
+                <span>
                   <i className="fas fa-long-arrow-alt-right"></i>
                 </span>
               </button>

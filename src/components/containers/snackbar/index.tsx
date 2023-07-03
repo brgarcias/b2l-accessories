@@ -70,7 +70,12 @@ export default function SnackbarFeedback({ content, setOpen }: SnackbarProps) {
             />
             <div className="snackbar-message">
               <p className="snackbar-title">{content.title}</p>
-              <p className="snackbar-description" style={{ fontSize: '0.8rem' }}>{content.description}</p>
+              <p
+                className="snackbar-description"
+                style={{ fontSize: '0.8rem' }}
+              >
+                {content.description}
+              </p>
             </div>
             <div
               onClick={() =>

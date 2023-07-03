@@ -103,8 +103,8 @@ const HomeTwoFeatures = () => {
                           onClick={() => setImgTab(imgTab === 0 ? -1 : 0)}
                         >
                           <span style={{ width: '85%' }}>
-                            Qual é o prazo de entrega dos produtos da
-                            B2L Acessórios?
+                            Qual é o prazo de entrega dos produtos da B2L
+                            Acessórios?
                           </span>
                         </button>
                       </h2>
@@ -123,8 +123,8 @@ const HomeTwoFeatures = () => {
                             antes de finalizar o pedido. Caso tenha alguma
                             dúvida específica sobre o prazo de entrega de um
                             produto em particular, recomendamos entrar em
-                            contato com o atendimento ao cliente da
-                            B2L Acessórios. Em até 48h.
+                            contato com o atendimento ao cliente da B2L
+                            Acessórios. Em até 48h.
                           </p>
                         </div>
                       </div>
@@ -155,10 +155,10 @@ const HomeTwoFeatures = () => {
                             produtos dentro do prazo estipulado pela política de
                             devolução da loja. É importante verificar as
                             condições específicas de devolução e troca na página
-                            de informações ou na política de devolução da
-                            B2L Acessórios. Caso precise realizar uma devolução
-                            ou troca, entre em contato com o atendimento ao
-                            cliente para obter as instruções adequadas.
+                            de informações ou na política de devolução da B2L
+                            Acessórios. Caso precise realizar uma devolução ou
+                            troca, entre em contato com o atendimento ao cliente
+                            para obter as instruções adequadas.
                           </p>
                         </div>
                       </div>
@@ -172,7 +172,9 @@ const HomeTwoFeatures = () => {
                           }
                           onClick={() => setImgTab(imgTab === 2 ? -1 : 2)}
                         >
-                          <span style={{ width: '85%' }}>A B2L Acessórios oferece frete grátis?</span>
+                          <span style={{ width: '85%' }}>
+                            A B2L Acessórios oferece frete grátis?
+                          </span>
                         </button>
                       </h2>
                       <div

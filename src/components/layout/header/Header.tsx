@@ -77,8 +77,8 @@ export default function Header() {
                       <i className="far fa-phone"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <Link href="tel:+088889797697" aria-label="Contact Us">
-                        +088889797697
+                      <Link href="tel:+5511945058769" aria-label="Contact Us">
+                        +55 (11) 945058769
                       </Link>
                     </div>
                   </li>

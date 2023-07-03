@@ -97,7 +97,7 @@ export default function Layout({ children }: layoutProps) {
         <meta name="keywords" content="digitek, seo, service" />
         <meta name="description" content="SEO Service React Template" />
       </Head>
-      <div className='fourth-page'>
+      <div className="fourth-page">
         <Header />
         <main>{children}</main>
         <Footer />
