@@ -85,7 +85,7 @@ export default function Layout({ children }: layoutProps) {
           sizes="16x16"
           href="assets/favicon/favicon-16x16.png"
         />
-        <link rel="manifest" href="assets/favicon/manifest.json" />
+        <link rel="manifest" href="assets/img/logo/logo-red.png" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta
           name="msapplication-TileImage"
@@ -94,6 +94,7 @@ export default function Layout({ children }: layoutProps) {
         <meta name="theme-color" content="#ffffff" />
 
         <title>B2L &mdash; Brindes e Utilidades</title>
+        <meta property="og:image" content="assets/favicon/favicon-16x16.png"></meta>
         <meta name="keywords" content="b2lbrindes, utilities, brindes" />
         <meta name="description" content="Utilidades de qualidade e variedade em um só lugar" />
       </Head>
