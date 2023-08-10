@@ -94,8 +94,8 @@ export default function Layout({ children }: layoutProps) {
         <meta name="theme-color" content="#ffffff" />
 
         <title>B2L &mdash; Brindes e Utilidades</title>
-        <meta name="keywords" content="digitek, seo, service" />
-        <meta name="description" content="SEO Service React Template" />
+        <meta name="keywords" content="b2lbrindes, utilities, brindes" />
+        <meta name="description" content="Utilidades de qualidade e variedade em um só lugar" />
       </Head>
       <div className="fourth-page">
         <Header />
