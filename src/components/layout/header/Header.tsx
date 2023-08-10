@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from 'public/assets/img/logo/b2l-logo-transparency.png';
+import LogoRed from 'public/assets/img/logo/logo-red.png';
 
 export default function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -149,8 +149,8 @@ export default function Header() {
                 <div className="header__logo">
                   <Link href="/">
                     <Image
-                      src={Logo}
-                      alt="logo not found"
+                      src={LogoRed}
+                      alt="b2l logo"
                       priority
                       unoptimized
                     />
