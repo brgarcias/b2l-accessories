@@ -33,14 +33,14 @@ export default function Banner() {
                     <span> {homePageTranslations('Banner.TitleAccent')}</span>
                   </span>
                   <h1 data-aos="fade-right" data-aos-delay="300">
-                    B2L Acessórios
+                    B2L Utilidades
                   </h1>
                   <p
                     data-aos="fade-up"
                     data-aos-delay="600"
                     style={{ textTransform: 'initial' }}
                   >
-                    Acessórios de Qualidade e Variedade em um só lugar
+                    Utilidades de Qualidade e Variedade em um só lugar
                   </p>
                 </div>
                 {/* <div

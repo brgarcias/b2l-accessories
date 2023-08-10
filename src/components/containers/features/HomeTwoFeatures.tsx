@@ -27,7 +27,7 @@ const HomeTwoFeatures = () => {
                   <div className="features__traffic">
                     <div className="content">
                       <span>Sempre Evoluindo!</span>
-                      <h5>B2L ACESSÓRIOS</h5>
+                      <h5>B2L UTILIDADES</h5>
                     </div>
                     <div className="icon">
                       <svg
@@ -104,7 +104,7 @@ const HomeTwoFeatures = () => {
                         >
                           <span style={{ width: '85%' }}>
                             Qual é o prazo de entrega dos produtos da B2L
-                            Acessórios?
+                            Utilidades?
                           </span>
                         </button>
                       </h2>
@@ -116,7 +116,7 @@ const HomeTwoFeatures = () => {
                       >
                         <div className="accordion-body">
                           <p>
-                            O prazo de entrega dos produtos da B2L Acessórios
+                            O prazo de entrega dos produtos da B2L Utilidades
                             pode variar dependendo da sua localização e do
                             método de envio selecionado. Geralmente, os prazos
                             estimados são exibidos durante o processo de compra,
@@ -124,7 +124,7 @@ const HomeTwoFeatures = () => {
                             dúvida específica sobre o prazo de entrega de um
                             produto em particular, recomendamos entrar em
                             contato com o atendimento ao cliente da B2L
-                            Acessórios. Em até 48h.
+                            Utilidades. Em até 48h.
                           </p>
                         </div>
                       </div>
@@ -139,7 +139,7 @@ const HomeTwoFeatures = () => {
                           onClick={() => setImgTab(imgTab === 1 ? -1 : 1)}
                         >
                           <span style={{ width: '85%' }}>
-                            A B2L Acessórios aceita devoluções ou trocas?
+                            A B2L Utilidades aceita devoluções ou trocas?
                           </span>
                         </button>
                       </h2>
@@ -151,12 +151,12 @@ const HomeTwoFeatures = () => {
                       >
                         <div className="accordion-body">
                           <p>
-                            Sim, a B2L Acessórios aceita devoluções e trocas de
+                            Sim, a B2L Utilidades aceita devoluções e trocas de
                             produtos dentro do prazo estipulado pela política de
                             devolução da loja. É importante verificar as
                             condições específicas de devolução e troca na página
                             de informações ou na política de devolução da B2L
-                            Acessórios. Caso precise realizar uma devolução ou
+                            Utilidades. Caso precise realizar uma devolução ou
                             troca, entre em contato com o atendimento ao cliente
                             para obter as instruções adequadas.
                           </p>
@@ -173,7 +173,7 @@ const HomeTwoFeatures = () => {
                           onClick={() => setImgTab(imgTab === 2 ? -1 : 2)}
                         >
                           <span style={{ width: '85%' }}>
-                            A B2L Acessórios oferece frete grátis?
+                            A B2L Utilidades oferece frete grátis?
                           </span>
                         </button>
                       </h2>
@@ -185,7 +185,7 @@ const HomeTwoFeatures = () => {
                       >
                         <div className="accordion-body">
                           <p>
-                            A B2L Acessórios pode oferecer frete grátis em
+                            A B2L Utilidades pode oferecer frete grátis em
                             determinadas condições, como quantidade mínima de
                             itens na compra ou promoções especiais. Recomendamos
                             verificar se há alguma oferta de frete grátis sendo
@@ -207,7 +207,7 @@ const HomeTwoFeatures = () => {
                           onClick={() => setImgTab(imgTab === 3 ? -1 : 3)}
                         >
                           <span style={{ width: '85%' }}>
-                            A B2L Acessórios possui um serviço de atendimento ao
+                            A B2L Utilidades possui um serviço de atendimento ao
                             cliente?
                           </span>
                         </button>
@@ -220,11 +220,11 @@ const HomeTwoFeatures = () => {
                       >
                         <div className="accordion-body">
                           <p>
-                            Sim, a B2L Acessórios possui um serviço de
+                            Sim, a B2L Utilidades possui um serviço de
                             atendimento ao cliente dedicado a ajudar os clientes
                             com quaisquer dúvidas, problemas ou solicitações.
                             Você pode entrar em contato com o atendimento ao
-                            cliente da B2L Acessórios por meio do canal de
+                            cliente da B2L Utilidades por meio do canal de
                             comunicação disponibilizado na página da loja ou
                             enviar seu <a href="#contact">contato</a>. Nossa
                             equipe estará pronta para ajudar e oferecer suporte.

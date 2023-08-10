@@ -44,10 +44,10 @@ const FeedbackFour = () => {
                         <div>
                           <p className="mb-4">
                             Estou super satisfeito com minha experiência de
-                            compra na B2L Acessórios! Comprei uma garrafa
+                            compra na B2L Utilidades! Comprei uma garrafa
                             térmica e ela chegou em perfeito estado, além de ser
                             linda e manter minha bebida quente por horas.
-                            Recomendo essa loja para quem busca acessórios de
+                            Recomendo essa loja para quem busca utilidades de
                             qualidade!
                           </p>
                           <h5>David Harbor</h5>
@@ -75,7 +75,7 @@ const FeedbackFour = () => {
                       <div className="d-flex align-items-center justify-content-between gap-3">
                         <div>
                           <p className="mb-4">
-                            Comprei um Spinner na B2L Acessórios e fiquei muito
+                            Comprei um Spinner na B2L Utilidades e fiquei muito
                             feliz com a minha escolha. O produto chegou antes do
                             prazo previsto e é de excelente qualidade. O
                             atendimento ao cliente também foi ótimo, com
@@ -108,7 +108,7 @@ const FeedbackFour = () => {
                         <div>
                           <p className="mb-4">
                             Estou extremamente satisfeito com a mochila de
-                            laptop que comprei na B2L Acessórios. Ela possui um
+                            laptop que comprei na B2L Utilidades. Ela possui um
                             design moderno e é muito espaçosa, permitindo que eu
                             transporte meu laptop de forma segura e ainda tenha
                             espaço para outros itens essenciais.

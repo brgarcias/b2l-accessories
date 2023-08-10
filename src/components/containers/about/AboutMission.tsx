@@ -29,11 +29,11 @@ const AboutMission = () => {
                 </h2>
               </div>
               <p>
-                A B2L Acessórios é uma empresa especializada na venda de
-                acessórios diversos, oferecendo uma ampla variedade de produtos
+                A B2L Utilidades é uma empresa especializada na venda de
+                utilidades diversos, oferecendo uma ampla variedade de produtos
                 de qualidade. Seu catálogo inclui Garrafas Térmicas, Fidget Hand
                 Spinners, Mochilas para Laptop e muito mais. Com um atendimento
-                eficiente ao cliente, a B2L Acessórios se destaca por oferecer
+                eficiente ao cliente, a B2L Utilidades se destaca por oferecer
                 produtos de altíssima qualidade, modernos e com preços
                 acessíveis.
               </p>
@@ -54,7 +54,7 @@ const AboutMission = () => {
                     <i className="fa-solid fa-check"></i>
                   </div>
                   <div className="about__features-content">
-                    <p>Acessórios Práticos e Modernos</p>
+                    <p>Utilidades Práticos e Modernos</p>
                     <p>- Muita variedade e qualidade no catálogo.</p>
                   </div>
                 </div>

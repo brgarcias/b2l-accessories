@@ -1,3 +1,3 @@
 # b2l-accessories
 
-Venda de Brindes e Acessórios
+Venda de Brindes e Utilidades
